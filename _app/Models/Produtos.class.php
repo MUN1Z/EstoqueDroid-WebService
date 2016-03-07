@@ -36,7 +36,7 @@ class Produtos {
 
         if ($Result):
 
-            return WSErro("Produto cadastrado com sucesso!", WS_ACCEPT);
+            return "Produto cadastrado com sucesso!";
         else:
             return false;
         endif;
@@ -52,7 +52,7 @@ class Produtos {
         $Result = $up->getResult();
 
         if ($Result):
-            return "Produto Atualizado!";
+            return "Produto Atualizado com sucesso!";
         else:
             return false;
         endif;
@@ -69,7 +69,7 @@ class Produtos {
 
         if ($Result):
 
-            return WSErro("Produto deletado com sucesso!", WS_ACCEPT);
+            return "Produto deletado com sucesso!";
         else:
             return false;
         endif;

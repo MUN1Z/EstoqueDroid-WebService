@@ -3,7 +3,7 @@
  * <b>Delete.class:</b>
  * Classe responsável por deletar genéricamente no banco de dados!
  * Retorna um objeto PDO pelo método estatico getCon 
- * @copyright (c) 2016, Felipe Muniz, OTPanel
+ * @copyright (c) 2016, Felipe Muniz, EstoqueDroid
  */
 class Delete extends Conn {
 

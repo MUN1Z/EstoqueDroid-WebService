@@ -1,13 +1,13 @@
 <?php
-	require('../_app/Config.inc.php');
+	require_once ('../_app/Config.inc.php');
         
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 		
 		//Getting values
       
-		$produto['nome'] = $_POST['nome'];
-		$produto['descricao'] = $_POST['descricao'];
-		$produto['preco'] = $_POST['preco'];
+		$produto['name'] = $_POST['name'];
+		$produto['description'] = $_POST['description'];
+		$produto['price'] = $_POST['price'];
 		
 		echo Produtos::Create($produto);
 	}

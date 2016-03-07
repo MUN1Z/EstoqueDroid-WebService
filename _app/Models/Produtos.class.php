@@ -14,7 +14,7 @@ class Produtos {
     public static function GetProdutos() {
 
         $Read = new Read;
-        $Read->ExeRead('produtos', "ORDER BY id DESC");
+        $Read->ExeRead('products', "ORDER BY id DESC");
         $Result = $Read->getResult();
 
         if ($Result):
@@ -30,7 +30,7 @@ class Produtos {
     public static function Create(array $dados) {
 
         $add = new Create();
-        $add->ExeCreate('produtos', $dados);
+        $add->ExeCreate('products', $dados);
         $Result = $add->getResult();
 
 
@@ -48,7 +48,7 @@ class Produtos {
     public static function Update(array $Dados, $id) {
 
         $up = new Update();
-        $up->ExeUpdate('produtos', $Dados, 'WHERE id = :id', "id=$id");
+        $up->ExeUpdate('products', $Dados, 'WHERE id = :id', "id=$id");
         $Result = $up->getResult();
 
         if ($Result):
@@ -64,7 +64,7 @@ class Produtos {
     public static function Delete($id) {
 
         $del = new Delete();
-        $del->ExeDelete('produtos', 'WHERE id = :id', "id=$id");
+        $del->ExeDelete('products', 'WHERE id = :id', "id=$id");
         $Result = $del->getResult();
 
         if ($Result):

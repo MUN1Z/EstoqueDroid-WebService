@@ -29,7 +29,7 @@ class Produtos {
      * Obtem o produto com o id tal 
      * @return $Array [] de Produtos
      */
-    public static function GetProdutoId2($id) {
+    public static function GetProdutoId($id) {
 
         $Read = new Read;
         $Read->FullRead("SELECT * FROM products WHERE id = :id", "id=$id");
@@ -42,6 +42,7 @@ class Produtos {
         endif;
     }
 
+    
     /**
      * Cadastra um produto
      */

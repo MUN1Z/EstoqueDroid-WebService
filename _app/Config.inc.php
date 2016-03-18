@@ -2,12 +2,12 @@
 
 // CONFIGRAÇÕES DO DB ####################
 define('HOST', 'localhost');                    //HOST DO BANCO DE DADOS 
-define('USER', 'root');                        //USUARIO DO BANCO DE DADOS
+define('USER', 'u876449334_ed');                        //USUARIO DO BANCO DE DADOS
 define('PASS', 'saosao');                     //SENHA DO BANCO DE DADOS
-define('DBSA', 'estoquedroid');              //NOME DO BANCO DE DADOS
+define('DBSA', 'u876449334_ed');              //NOME DO BANCO DE DADOS
 
 
-// FUNÇÃO PARA CARREGAR TODAS AS CLASSES ####################
+// FUNÇÃO PARA CARREGAR TODAS AS CLASSES ################
 function __autoload($Class){
 		$cDir = ['Conn', 'Helpers', 'Models'];
 		$iDir = null;

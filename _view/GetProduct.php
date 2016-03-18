@@ -4,7 +4,7 @@
 	
 	$id = $_GET['id'];
 	
-	$result = Produtos::GetProdutoId2($id);
+	$result = Produtos::GetProdutoId($id);
 	
 	echo json_encode(array('produto'=>$result));
 	
